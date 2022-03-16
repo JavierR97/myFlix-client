@@ -6,5 +6,23 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0"
-  }
+  },
+  "name": "myflix-client",
+  "description": "Client side of my myFlix app to be used with the server-side REST api and Database.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierR97/myFlix-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierR97/myFlix-client/issues"
+  },
+  "homepage": "https://github.com/JavierR97/myFlix-client#readme"
 }
