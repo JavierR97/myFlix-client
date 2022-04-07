@@ -1,11 +1,13 @@
 import React from 'react';
 
 export class MovieView extends React.Component {
+
+    
     render() {
         const { movie, onBackClick } = this.props;
-
+        
         if (movie.length === 0) return <div className="movie-view">No information to be displayed.</div>
-
+        
         return (
             <div className="movie-view">
                 <div className="movie-poster">
@@ -23,5 +25,17 @@ export class MovieView extends React.Component {
 
             </div>
         )
+    }
+    
+    keypressCallback(event) {
+        console.log(event.key);
+    }
+    
+    componentDidMount() {
+        document.addEventListener('keypress', this.keypressCallback);
+    }
+    
+    componentWillUnmount() {
+        document.removeEventListener('keypress' , this.keypressCallback)
     }
 }

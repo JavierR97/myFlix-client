@@ -25,6 +25,7 @@ export class MainView extends React.Component {
     }
 
     componentDidMount(){
+        //axios is used to fetch movies, then set the state of movues using this.setState
         axios.get('https://myfilmapi.herokuapp.com/movies')
           .then(response => {
             this.setState({
@@ -49,7 +50,7 @@ export class MainView extends React.Component {
     if (selectedMovie) return <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>;
 
     // returns 'this list is empty' if movies array is empty
-    if (movies.length === 0) return <div className="main-view" />;
+    if (movies.length === 0) return <div className="main-view">loading...</div>;
     
     // this is what is going to display/render
     return (

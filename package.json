@@ -2,11 +2,13 @@
   "dependencies": {
     "axios": "^0.26.1",
     "init": "^0.1.2",
+    "parcel": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.4.0",
+    "process": "^0.11.10"
   },
   "name": "myflix-client",
   "description": "Client side of my myFlix app to be used with the server-side REST api and Database.",
