@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RegistrationView } from '../registration-view/registration-view';
+import PropTypes from 'prop-types';
 
 
 export function LoginView(props) {
@@ -30,3 +30,9 @@ export function LoginView(props) {
     </form>
   );  
 } 
+
+LoginView.propTypes = {
+    username: PropTypes.string,
+    password: PropTypes.string,
+    onLoggedIn: PropTypes.string
+}; 

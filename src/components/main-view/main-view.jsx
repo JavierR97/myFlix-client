@@ -1,6 +1,7 @@
 // imports React into this file.
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 import { RegistrationView } from '../registration-view/registration-view';
 import { LoginView } from '../login-view/login-view';
@@ -51,12 +52,18 @@ export class MainView extends React.Component {
         });
     }
 
+    onRegister(user) {
+        this.setState({
+            user
+        });
+    }
+
 // ( render() )- controles what the component displays
     render() {
     const { movies, selectedMovie, user } = this.state;
 
-  /*   if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  /> */
-    if(user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
+    if(!user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
+    if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  /> 
 
     if (selectedMovie) return <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>;
 
@@ -71,4 +78,9 @@ export class MainView extends React.Component {
     );
   }
 }
+
+MainView.propTypes = {
+    onLoggedIn: PropTypes.string,
+    onRegister: PropTypes.string
+};
 
