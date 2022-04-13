@@ -4,10 +4,15 @@ form {
   margin: 0 auto;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #25283d, #464c74);
+}
+
 div.app-container {
   height: inherit;
   width: inherit;
-  background-image: linear-gradient(to right, #25283d, #464c74);
   flex-direction: column;
   justify-content: center;
   align-items: center;

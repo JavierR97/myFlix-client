@@ -3,8 +3,12 @@ form {
     width: 50%;
     margin: 0 auto;
 }
-div.app-container{
+body{
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to right, #25283D, #464c74);
+}
+div.app-container{
     display:flex;
     flex-direction: column;
     height: inherit;
