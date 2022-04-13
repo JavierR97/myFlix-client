@@ -1,1 +1,22 @@
- 
+form {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+div.app-container{
+    background-image: linear-gradient(to right, #25283D, #464c74);
+    display:flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+button.btn.btn-info {
+    font-weight: bold;
+    color: white;
+    border-color: #1B9AAA;
+    background-color: #1B9AAA;
+    margin-top: 10px;
+}

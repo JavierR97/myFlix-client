@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
+import Col from 'react-bootstrap/Col';
 
 import { RegistrationView } from '../registration-view/registration-view';
 import { LoginView } from '../login-view/login-view';
@@ -73,7 +74,7 @@ export class MainView extends React.Component {
     // this is what is going to display/render
     return (
         <div className="main-view">
-        {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}
+            {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}
         </div>
     );
   }
@@ -84,3 +85,6 @@ MainView.propTypes = {
     onRegister: PropTypes.string
 };
 
+/* <div className="main-view">
+    {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}
+</div> */

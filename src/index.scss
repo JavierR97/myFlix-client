@@ -1,9 +1,12 @@
 $color: steelblue;
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
 .my-flix {
   color: $color;
 }
 
-.movie-poster img {
-    width: 250px;
-}
+// form
+

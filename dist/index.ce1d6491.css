@@ -1,9 +1,22 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 .my-flix {
   color: #4682b4;
 }
 
-.movie-poster img {
-  width: 250px;
+div.app-container {
+  height: inherit;
+  width: inherit;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.btn.btn-primary {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=index.ce1d6491.css.map */

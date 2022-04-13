@@ -1,0 +1,34 @@
+form {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+div.app-container {
+  height: inherit;
+  width: inherit;
+  background-image: linear-gradient(to right, #25283d, #464c74);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button.btn.btn-info {
+  color: #fff;
+  background-color: #1b9aaa;
+  border-color: #1b9aaa;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.my-flix {
+  color: #4682b4;
+}
+
+/*# sourceMappingURL=index.27d8da6b.css.map */
