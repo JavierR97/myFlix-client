@@ -76,7 +76,7 @@ export class MainView extends React.Component {
     // this is what is going to display/render
     return (
         <div className="main-view">
-            <Row >         
+            <Row>       
                 {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}                         
             </Row>
         </div>

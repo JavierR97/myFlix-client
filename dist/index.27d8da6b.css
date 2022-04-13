@@ -45,6 +45,39 @@ button.card-btn.btn.btn-info:hover {
   padding: 5px 11px;
 }
 
+.movie-poster {
+  justify-content: center;
+  display: flex;
+}
+
+div.movie-poster img {
+  width: 250px;
+}
+
+.movie-title {
+  text-align: center;
+}
+
+.movie-title, .movie-description {
+  color: #fff;
+}
+
+div.movie-view button {
+  color: #fff;
+  width: 75px;
+  background-color: #1b9aaa;
+  border-color: #1b9aaa;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+div.movie-view button:hover {
+  color: #fff;
+  border: 2px solid #1fafc2;
+  box-shadow: 0 0 10px #26e0f8;
+}
+
 body {
   width: 100vw;
   height: fit-content;

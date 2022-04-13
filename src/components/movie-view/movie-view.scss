@@ -1,0 +1,35 @@
+.movie-poster {
+    display: flex;
+    justify-content: center;
+}
+
+div.movie-poster img {
+    width: 250px;
+}
+
+.movie-title{
+    text-align: center;
+}
+
+.movie-title,
+.movie-description {
+    color: white;
+
+}
+
+div.movie-view button {
+    color: white;
+    background-color: #1B9AAA;
+    border-color: #1B9AAA;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 75px;
+    padding: 8px 15px;
+}
+
+div.movie-view button:hover {
+    color: white;
+    border: 2px solid #1fafc2;
+    box-shadow: 0 0 10px #26e0f8;
+
+}
