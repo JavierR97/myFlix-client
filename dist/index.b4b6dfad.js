@@ -27057,6 +27057,7 @@ var _button = require("react-bootstrap/Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _card = require("react-bootstrap/Card");
 var _cardDefault = parcelHelpers.interopDefault(_card);
+var _movieCardScss = require("./movie-card.scss");
 class MovieCard extends _reactDefault.default.Component {
     render() {
         const { movie , onMovieClick  } = this.props;
@@ -27070,7 +27071,7 @@ class MovieCard extends _reactDefault.default.Component {
                     src: movie.ImagePath
                 }, void 0, false, {
                     fileName: "src/components/main-view/movie-card/movie-card.jsx",
-                    lineNumber: 11,
+                    lineNumber: 13,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_cardDefault.default.Body, {
@@ -27079,14 +27080,14 @@ class MovieCard extends _reactDefault.default.Component {
                             children: movie.Title
                         }, void 0, false, {
                             fileName: "src/components/main-view/movie-card/movie-card.jsx",
-                            lineNumber: 13,
+                            lineNumber: 15,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_cardDefault.default.Text, {
                             children: movie.Description
                         }, void 0, false, {
                             fileName: "src/components/main-view/movie-card/movie-card.jsx",
-                            lineNumber: 14,
+                            lineNumber: 16,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_buttonDefault.default, {
@@ -27096,19 +27097,19 @@ class MovieCard extends _reactDefault.default.Component {
                             children: "Open"
                         }, void 0, false, {
                             fileName: "src/components/main-view/movie-card/movie-card.jsx",
-                            lineNumber: 15,
+                            lineNumber: 17,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/main-view/movie-card/movie-card.jsx",
-                    lineNumber: 12,
+                    lineNumber: 14,
                     columnNumber: 13
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/main-view/movie-card/movie-card.jsx",
-            lineNumber: 10,
+            lineNumber: 12,
             columnNumber: 13
         }, this);
     }
@@ -27136,7 +27137,7 @@ MovieCard.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap/Button":"aPzUt","react-bootstrap/Card":"lAynp"}],"lAynp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap/Button":"aPzUt","react-bootstrap/Card":"lAynp","./movie-card.scss":"7Izih"}],"lAynp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -27271,7 +27272,7 @@ const context = /*#__PURE__*/ _react.createContext(null);
 context.displayName = 'CardHeaderContext';
 exports.default = context;
 
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ggaUx":[function(require,module,exports) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7Izih":[function() {},{}],"ggaUx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

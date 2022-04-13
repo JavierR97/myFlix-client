@@ -2,11 +2,12 @@ form {
   color: #fff;
   width: 50%;
   margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 body {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(to right, #25283d, #464c74);
 }
 
@@ -15,7 +16,6 @@ div.app-container {
   width: inherit;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   display: flex;
 }
 
@@ -26,6 +26,14 @@ button.btn.btn-info {
   margin-top: 10px;
   font-weight: bold;
 }
+
+button.btn.btn-info:hover {
+  border: 2px solid #1fafc2;
+  padding: 7px 15px;
+  box-shadow: 0 0 10px #26e0f8;
+}
+
+
 
 body {
   width: 100vw;
