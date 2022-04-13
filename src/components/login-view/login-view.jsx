@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
 import './login-view.scss';
 
 export function LoginView(props) {
@@ -35,6 +34,6 @@ export function LoginView(props) {
 LoginView.propTypes = {
     username: PropTypes.string,
     password: PropTypes.string,
-    onLoggedIn: PropTypes.string
+    onLoggedIn: PropTypes.func
 }; 
 

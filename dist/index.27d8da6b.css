@@ -1,19 +1,16 @@
 form {
   color: #fff;
-  width: 50%;
-  margin: 0 auto;
+  width: 65%;
+  margin: 270px auto;
   font-size: 1.2rem;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   background-image: linear-gradient(to right, #25283d, #464c74);
 }
 
 div.app-container {
-  height: inherit;
-  width: inherit;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -33,11 +30,24 @@ button.btn.btn-info:hover {
   box-shadow: 0 0 10px #26e0f8;
 }
 
+div.card {
+  background-color: #b6ffec;
+  border: 2px solid #1b9aaa;
+  margin: 19px auto;
+  box-shadow: 10px 10px 5px #0000008c;
+}
 
+img.card-img-top {
+  margin-top: 10px;
+}
+
+button.card-btn.btn.btn-info:hover {
+  padding: 5px 11px;
+}
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
 }
 
 .my-flix {

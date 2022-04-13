@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Form, Button } from '';
 
 export function RegistrationView(props) {
     const [ username, setUsername] = useState('');
@@ -11,21 +12,23 @@ export function RegistrationView(props) {
         props.onRegister(username)
     }
     return (
-        <form action="">
-            <label htmlFor="">
-                Username:
-                <input type="text" value={ username } onChange={ e => setUsername(e.target.value) }/>
-            </label>
-            <label htmlFor="">
-                Password: 
-                <input type="password" value={ password } onChange={ e => setPassword(e.target.value) } />
-            </label>
-            <label htmlFor="">
-                Email:
-                <input type="email" value={ email } onChange={ e => setEmail(e.target.value) }/>
-            </label>
-            <button type="submit" onClick={handleSubmit}>Register</button>
-        </form>
+        <Form>
+            <Form.Group>
+                <Form.Label>Username:</Form.Label>
+                <Form.Control placeholder="Username..." type="text" value={ username } onChange={ e => setUsername(e.target.value) }/>
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Label>Password:</Form.Label>
+                <Form.Control placeholder="Password..." type="password" value={ password } onChange={ e => setPassword(e.target.value) }/>
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Label>Email:</Form.Label>
+                <Form.Control type="email" value={ email } onChange={ e => setEmail(e.target.value) } required/>
+            </Form.Group>
+            <Button type="submit" onClick={handleSubmit}>Register</Button>
+        </Form>
     );
 };
 
@@ -33,5 +36,5 @@ RegistrationView.propTypes = {
     username: PropTypes.string,
     passwordP: PropTypes.string,
     email: PropTypes.string,
-    onRegister: PropTypes.string 
+    onRegister: PropTypes.func 
 }; 

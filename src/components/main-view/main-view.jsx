@@ -2,9 +2,10 @@
 import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
-import { RegistrationView } from '../registration-view/registration-view';
+
+/* import { RegistrationView } from '../registration-view/registration-view'; */
 import { LoginView } from '../login-view/login-view';
 import { MovieCard } from './movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
@@ -64,17 +65,20 @@ export class MainView extends React.Component {
     const { movies, selectedMovie, user } = this.state;
 
     if(!user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
-    if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  /> 
-
-    if (selectedMovie) return <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>;
-
+    /* if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  />  */
+    
     // returns 'this list is empty' if movies array is empty
     if (movies.length === 0) return <div className="main-view">loading...</div>;
+    
+    if (selectedMovie) return <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>;
+
     
     // this is what is going to display/render
     return (
         <div className="main-view">
-            {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}
+            <Row >         
+                {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}                         
+            </Row>
         </div>
     );
   }
@@ -84,7 +88,3 @@ MainView.propTypes = {
     onLoggedIn: PropTypes.string,
     onRegister: PropTypes.string
 };
-
-/* <div className="main-view">
-    {movies.map(movie => <MovieCard key={movie._id} movie={movie} onMovieClick={(movie) => { this.setSelectedMovie(movie) }} />)}
-</div> */

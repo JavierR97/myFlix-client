@@ -1,20 +1,19 @@
 form {
     color: white;
     font-size: 1.2rem;
-    margin: 0 auto;
-    width: 50%;
+    margin: 270px auto;
+    width: 65%;
 }
+
 body{
     background-image: linear-gradient(to right, #25283D, #464c74);
-    height: 100vh;
-    width: 100vw;
 }
+
 div.app-container{
     display:flex;
     flex-direction: column;
-    height: inherit;
     justify-content: center;
-    width: inherit;
+    width: 100%;
 }
 
 button.btn.btn-info {
