@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Row from 'react-bootstrap/Row';
 
 
-/* import { RegistrationView } from '../registration-view/registration-view'; */
+import { RegistrationView } from '../registration-view/registration-view';
 import { LoginView } from '../login-view/login-view';
 import { MovieCard } from './movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
@@ -64,8 +64,14 @@ export class MainView extends React.Component {
     render() {
     const { movies, selectedMovie, user } = this.state;
 
-    if(!user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
-    /* if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  />  */
+    if (!user) {
+        return (
+            <>
+                <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
+                <RegistrationView onRegister={user => this.onRegister(user) } />
+            </>
+        );
+    }  
     
     // returns 'this list is empty' if movies array is empty
     if (movies.length === 0) return <div className="main-view">loading...</div>;
@@ -85,6 +91,10 @@ export class MainView extends React.Component {
 }
 
 MainView.propTypes = {
-    onLoggedIn: PropTypes.string,
-    onRegister: PropTypes.string
+    onLoggedIn: PropTypes.func,
+    onRegister: PropTypes.func
 };
+
+/* 
+    if(!user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
+    /* if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  />  * */

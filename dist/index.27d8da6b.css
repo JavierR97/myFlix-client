@@ -1,7 +1,7 @@
 form {
   color: #fff;
   width: 65%;
-  margin: 270px auto;
+  margin: 200px auto 25px;
   font-size: 1.2rem;
 }
 
@@ -47,6 +47,7 @@ button.card-btn.btn.btn-info:hover {
 
 .movie-poster {
   justify-content: center;
+  margin-top: 30px;
   display: flex;
 }
 
@@ -77,6 +78,8 @@ div.movie-view button:hover {
   border: 2px solid #1fafc2;
   box-shadow: 0 0 10px #26e0f8;
 }
+
+
 
 body {
   width: 100vw;
