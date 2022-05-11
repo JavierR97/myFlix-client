@@ -1,0 +1,93 @@
+
+
+form {
+  color: #fff;
+  width: 65%;
+  margin: 39px auto 25px;
+  font-size: 1.2rem;
+}
+
+body {
+  background-image: linear-gradient(to right, #25283d, #464c74);
+}
+
+div.app-container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+button.btn.btn-info {
+  color: #fff;
+  background-color: #1b9aaa;
+  border-color: #1b9aaa;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button.btn.btn-info:hover {
+  border: 2px solid #1fafc2;
+  padding: 7px 15px;
+  box-shadow: 0 0 10px #26e0f8;
+}
+
+div.card {
+  background-color: #b6ffec;
+  border: 2px solid #1b9aaa;
+  margin: 19px auto;
+  box-shadow: 10px 10px 5px #0000008c;
+}
+
+img.card-img-top {
+  margin-top: 10px;
+}
+
+button.card-btn.btn.btn-info:hover {
+  padding: 5px 11px;
+}
+
+.movie-poster {
+  justify-content: center;
+  margin-top: 30px;
+  display: flex;
+}
+
+div.movie-poster img {
+  width: 250px;
+}
+
+.movie-title {
+  text-align: center;
+}
+
+.movie-title, .movie-description {
+  color: #fff;
+}
+
+div.movie-view button {
+  color: #fff;
+  width: 75px;
+  background-color: #1b9aaa;
+  border-color: #1b9aaa;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+div.movie-view button:hover {
+  color: #fff;
+  border: 2px solid #1fafc2;
+  box-shadow: 0 0 10px #26e0f8;
+}
+
+body {
+  width: 100vw;
+  height: fit-content;
+}
+
+.my-flix {
+  color: #4682b4;
+}
+
+/*# sourceMappingURL=index.3bb28fe2.css.map */

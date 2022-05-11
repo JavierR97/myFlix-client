@@ -48,10 +48,15 @@ export class MainView extends React.Component {
         });
     }
 
-    onLoggedIn(user) {
+    onLoggedIn(authData) {
+        console.log(authData);
         this.setState({
-            user
+            user: authData.user.Username
         });
+        
+        localStorage.setItem('token', authData.token);
+        localStorage.setItem('user', authData.user.Username);
+        this.getMovies(authData.token);
     }
 
     onRegister(user) {
@@ -59,6 +64,21 @@ export class MainView extends React.Component {
             user
         });
     }
+
+    getMovies(token) {
+        axios.get('https://myfilmapi.herokuapp.com/movies', {
+          headers: { Authorization:`Bearer ${token}`}
+        })
+        .then(response => {
+          // Assign the result to the state
+          this.setState({
+            movies: response.data
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      }
 
 // ( render() )- controles what the component displays
     render() {
@@ -98,3 +118,6 @@ MainView.propTypes = {
 /* 
     if(!user) return < LoginView onLoggedIn={ user => this.onLoggedIn(user) }  />
     /* if(!user) return < RegistrationView onRegister={ user => this.onRegister(user) }  />  * */
+
+
+    
